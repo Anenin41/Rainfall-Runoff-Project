@@ -47,7 +47,7 @@ Here:
 - `-h` shows the help message.
 
 # Librarian.sh
-This bash script automatically mounts or dismounts a private[^1] samba share drive. It also checks if the drive is mounted (or not mounted) before performing each operation, and returns back an appropriate message. This script is destined to be used **globally**.
+This bash script automatically mounts or dismounts a private[^1] samba share drive. It also checks if the drive is mounted (or not mounted) before performing each operation, and returns back an appropriate message. This script is destined to be used **globally**. Because it contains privileged information, it is not uploaded on this public repository.
 
 ## Usage
 ```bash
@@ -56,4 +56,4 @@ chmod 755 librarian
 sudo cp librarian /usr/local/bin/
 ```
 
-[^1]: The samba share is only accessible by a private VPN network. This message SHOULD NEVER see the light of day, and it is only for my own eyes.
+[^1]: The samba share is not public access.
