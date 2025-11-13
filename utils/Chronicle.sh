@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-#
-# Author:   Konstantinos Garas
-# E-mail:   kgaras041@gmail.com
-# Created:  Wed 29 Oct 2025 @ 13:53:50 +0100
-# Modified: Mon 10 Nov 2025 @ 19:24:26 +0100
 
 # Chronicle.sh
 # Safe incremental backup of the Git repo (excluding the .git file) to the 

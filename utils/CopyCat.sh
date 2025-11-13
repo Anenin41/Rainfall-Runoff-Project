@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-#
-# Author:   Konstantinos Garas
-# E-mail:   kgaras041@gmail.com
-# Created:  Mon 10 Nov 2025 @ 12:50:46 +0100
-# Modified: Mon 10 Nov 2025 @ 19:12:20 +0100
 
 # CopyCat.sh:
 # Copy a filtered subset of a fixed source tree into a fixed destination folder

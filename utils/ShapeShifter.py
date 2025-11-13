@@ -1,8 +1,4 @@
 # ShapeSifter.py #
-# Author: Konstantinos Garas
-# E-mail: kgaras041@gmail.com // k.gkaras@student.rug.nl
-# Created: Tue 28 Oct 2025 @ 23:55:06 +0100
-# Modified: Mon 10 Nov 2025 @ 18:50:48 +0100
 
 ''' 
 ShapeShifter Module 
