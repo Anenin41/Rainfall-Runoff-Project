@@ -6,7 +6,7 @@ The crude implementation of the old script, even though correct, is very slow. T
 
 To solve this problem, a new symbolic representation of these formulas was found and implemented from the package's documentation. Running speed comparisons between the old and the new script showcases that this modified representation is approximately 30 times faster than what was previously implemented.
 
-This script was encoded with CLI printability in mind. This means that the order of the model `N` should remain small, so the terminal can print the results neatly into the terminal. In case this needs to be used as part of a solver suite, **then it needs refactoring**.
+This script was encoded with CLI printability in mind. This means that the order of the model `N` should remain small, so the `stdout` can print the results neatly into the terminal. In case this needs to be used as part of a solver suite, **then it needs refactoring**.
 
 ## Convention
 Because the Shallow Water Moment models use the shifted and scaled Legendre polynomials as basis functions, in order to use the `legendre()` command of the package, the following convention takes place:
