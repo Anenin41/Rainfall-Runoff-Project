@@ -1,0 +1,87 @@
+[pde_information]
+1D = True
+pde_type = RechargeSWME1D
+frictionModel = Newton
+
+# keep old SWME friction inactive for this first test
+slipLength = 1.0
+viscosity = 1e-3
+linear_source = False
+hyperbolic = False
+
+# Mixing-induced friction model for f_R and f_I
+mixing_friction_model = admissible
+
+# Slopes of the admissible laws
+alpha_R = 1.0
+alpha_I = 0.0
+
+# use an existing simple initial condition
+initialCondition = smooth_nested_profile_pulse_mild
+breakdown_criterion = nothing
+
+# Infiltration model selector
+infiltration_type = horton
+
+# Rainfall rate
+rainfall_rate = 2.0e-1
+
+# Horton is not active on this test
+# Scaled Horton parameters:
+# f0 > R > fc, with transition around t ≈ 0.51
+horton_f0 = 2.4e-1
+horton_fc = 1.4e-1
+horton_k = 1.0
+
+# Constant infiltration parameters
+# constant_infiltration_rate = -1.0e-1
+# constant_infiltration_eps = 1e-16
+# constant_limit_by_rainfall = False
+# constant_limit_by_available_water = True
+
+[grid_information]
+structuredGrid = True
+resolutionX = 450
+resolutionY = 1
+
+x1boundary = 0.0
+x2boundary = 1.0
+y1boundary = 0.0
+y2boundary = 1.0
+
+[numerical_method_information]
+t_end = 1.8
+
+method = classical
+coupling = conservative
+
+# Run 1:
+# start_order = 0
+# order = 0
+
+# Run 2:
+# start_order = 1
+# order = 1
+
+# Run 3:
+# start_order = 2
+# order = 2
+
+fvm_type = PVM
+pvm = Roe
+
+timeIntegrator = ExplicitEuler
+boundaryCondition = INFLOW_OUTFLOW
+
+[postprocessing]
+# Output directory for recharge related results (relative to project root)
+recharge_output_dir = Data-processing/Results/Recharge
+
+# Whether to store the full solution history and hyperbolicity history to CSV
+store_history = True
+store_hyperbolicity = False
+
+# How frequently (in timesteps) to record history samples
+# 1 = every step; increase to reduce output size
+history_stride = 1
+hyperbolicity_stride = 1
