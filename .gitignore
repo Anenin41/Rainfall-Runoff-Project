@@ -28,6 +28,8 @@ __pycache__/
 *.PNG
 *.gif
 *.csv
+data.zip
+structure.txt
 
 # ignore language auxiliary files
 ## Python

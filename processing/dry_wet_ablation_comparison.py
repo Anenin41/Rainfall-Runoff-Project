@@ -616,7 +616,7 @@ def plot_single_recharge_minus_dry_bulk_quantity(
             x=t,
             y=diff,
             order=order,
-            label=f"Wet - Dry, N={order}",
+            label=f"Source-Active - Source-Free, N={order}",
         )
 
     plot_zero_line(ax)

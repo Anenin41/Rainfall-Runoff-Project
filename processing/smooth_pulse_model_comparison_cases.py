@@ -572,7 +572,7 @@ def plot_smooth_pulse_spatial_profiles(
                 label=f"N={order}",
             )
 
-        ax.set_title(f"t = {time_value:.3f}")
+        ax.set_title(f"t = {selected_times[col]:.1f}")
         ax.set_xlabel(r"$x$")
         ax.set_ylabel(r"$h$")
         ax.grid(True, alpha=0.3)
@@ -612,7 +612,7 @@ def plot_smooth_pulse_spatial_profiles(
                 label=f"N={order}",
             )
 
-        ax.set_title(f"t = {time_value:.3f}")
+        ax.set_title(f"t = {selected_times[col]:.1f}")
         ax.set_xlabel(r"$x$")
         ax.set_ylabel(r"$u_m$")
         ax.grid(True, alpha=0.3)
